@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to your final riddle</title>
-</head>
+<html>
 <body>
-<p> You have come so far on your challenge</p>
-<p> Can you solve the last challenge to complete all the riddles?</p>
-<p> Good luck!!!</p>
+
+<p>Click the button to display an alert box.</p>
+<form action="" method="POST">
+    <div class="question">
+        <p><strong>Q1</strong>: 2+ 1 is what?</p>
+        <label>
+            <input type="radio" name="answer" id="a">4</label>
+        <label>
+            <input type="radio" name="answer" id="b">7</label>
+        <label>
+            <input type="radio" name="answer" id="c">3</label>
+        <label>
+        </label>
+    </div>
+    <input type="submit" onclick="myFunction()">
+</form>
 </body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+        if(document.getElementById('c').checked) {
+            alert("Correct Answer!");
+        }
+    }
+</script>
 </html>
