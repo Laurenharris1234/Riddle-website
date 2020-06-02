@@ -2,7 +2,7 @@
 <html>
 <title>Final riddle</title>
 <body>
-<form action="" method="POST">
+<form id="action">
     <div class="question">
         <p><strong>Q3</strong> I am a mother's child and a fathers child but nobody's son. Who am I</p>
         <label>
@@ -21,11 +21,12 @@
 
 
 <script>
-    function myFunction() {
+    var form = document.getElementById('action');
+    function myFunction(){
         if(document.getElementById('c').checked) {
-            window.location.href="YouWin.html"
+            form.action = 'YouWin.html';
         } else {
-            window.location.href="YouLose.html"
+            form.action ="YouLose.html"
         }
     }
 </script>
