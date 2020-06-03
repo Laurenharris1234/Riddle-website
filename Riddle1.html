@@ -11,7 +11,7 @@
 
 <body>
 
-<form action="" method="POST">
+<form id="action" method="POST">
 
     <div class="question">
 
@@ -29,14 +29,18 @@
 
 <script>
 
-    function myFunction() {
+    var form = document.getElementById('action');
+
+    function myFunction(){
+
         if(document.getElementById('b').checked) {
 
-            alert("Correct Answer!");
+            form.action = 'Riddle2.html';
 
-        } else{
+        } else {
 
-            alert("Incorrect Answer!");
+            form.action ="YouLose.html"
+
         }
 
     }
