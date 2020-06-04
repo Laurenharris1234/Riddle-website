@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Riddle 1</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+
+<body>
+
+<form id="action" method="POST">
+
+    <div class="question">
+
+        <p><strong>Q1</strong>: What gets wetter and wetter the more it dries?</p>
+
+        <label><input type="radio" name="answer" id="a"> Water</label>
+        <label><input type="radio" name="answer" id="b"> A towel</label>
+        <label><input type="radio" name="answer" id="c"> Ice</label>
+
+    </div>
+<p>
+    <input class="submit" type="submit" onclick="myFunction()">
+</p>
+
+
+</form>
+
+<script>
+
+    var form = document.getElementById('action');
+
+    function myFunction(){
+
+        if(document.getElementById('b').checked) {
+
+            form.action = 'Riddle2.html';
+
+        } else {
+
+            form.action ="YouLose.html"
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>
