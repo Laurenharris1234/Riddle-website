@@ -1,34 +1,31 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-<title>Final riddle</title>
 <body>
 
 <p>Simple riddle</p>
-<form id="action">
+<form action="" method="POST">
     <div class="question">
-        <p><strong>Q3</strong> I am a mother's child and a fathers child but nobody's son. Who am I</p>
+        <p><strong>Q1</strong>: 2+ 1 is what?</p>
         <label>
-            <input type="radio" name="answer" id="a">A Grandson</label>
+            <input type="radio" name="answer" id="a">4</label>
         <label>
-            <input type="radio" name="answer" id="b">An Uncle</label>
+            <input type="radio" name="answer" id="b">7</label>
         <label>
-            <input type="radio" name="answer" id="c">A Daughter</label>
+            <input type="radio" name="answer" id="c">3</label>
         <label>
         </label>
     </div>
     <input type="submit" onclick="myFunction()">
 </form>
-<img src="https://i.gifer.com/YOPR.gif" alt="Question mark gif">
 </body>
 
 
 <script>
-    var form = document.getElementById('action');
-    function myFunction(){
+    function myFunction() {
         if(document.getElementById('c').checked) {
-            form.action = 'YouWin.html';
+            window.location.href="YouWin.html"
         } else {
-            form.action ="YouLose.html"
+            window.location.href="YouLose.html"
         }
     }
 </script>
